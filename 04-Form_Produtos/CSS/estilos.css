@@ -1,0 +1,53 @@
+/* Resetando estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+  font-family: Arial, sans-serif; /* Fonte básica */
+  background-color: #f8f9fa; /* Fundo cinza claro */
+  color: #212529; /* Texto em tom escuro */
+  line-height: 1.5;
+}
+
+/* Container principal */
+#corpo {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ced4da;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Azul forte */
+}
+
+/* Rodapé */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6c757d; /* Cinza escuro */
+}
+
+footer address {
+  font-style: normal;
+}
+
+footer abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #ced4da;
+}

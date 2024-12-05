@@ -1,0 +1,178 @@
+/* Resetando estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Definindo a fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Altura das linhas para melhor legibilidade */
+}
+
+/* Main: Estilos para a área principal */
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto; /* Centralizando o conteúdo */
+    background-color: #fff; /* Fundo branco para o conteúdo principal */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+}
+
+/* Header: Estilos para o cabeçalho */
+header {
+    text-align: right; /* Alinhando o link à direita */
+    margin-bottom: 20px;
+}
+
+#mostra-form-cadastro {
+    text-decoration: none; /* Removendo o sublinhado */
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#mostra-form-cadastro:hover {
+    background-color: #0056b3; /* Mudando a cor ao passar o mouse */
+}
+
+/* Estilos para o formulário de cadastro */
+#formulario-cadastro-contato {
+    display: none; /* Inicialmente oculto */
+    padding: 20px;
+    border: 1px solid #ddd; /* Borda fina */
+    background-color: #fafafa; /* Cor de fundo suave */
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1.1rem; /* Tamanho maior para os rótulos */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"] {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Borda sutil */
+}
+
+input[type="radio"] {
+    width: auto; /* Ajustando o tamanho dos rádios */
+    margin-right: 10px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Fundo claro para fieldsets */
+}
+
+legend {
+    font-weight: bold;
+    color: #007BFF; /* Cor para o texto do título do fieldset */
+}
+
+#esconde-form-cadastro,
+button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Cor de fundo verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#esconde-form-cadastro {
+    background-color: #dc3545; /* Cor de fundo vermelho para cancelar */
+}
+
+#esconde-form-cadastro:hover,
+button:hover {
+    background-color: #155724; /* Verde mais escuro ao passar o mouse */
+}
+
+#esconde-form-cadastro:hover {
+    background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilos para os avatares */
+fieldset ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset ul li {
+    text-align: center;
+}
+
+fieldset ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Tornando as imagens redondas */
+    margin-bottom: 5px;
+}
+
+#lista-contatos {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #007BFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Estilo para o botão de remover contato */
+.botao-remover-contato {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.botao-remover-contato:hover {
+    opacity: 0.7;
+}
+

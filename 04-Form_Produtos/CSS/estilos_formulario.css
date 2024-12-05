@@ -1,0 +1,78 @@
+/* Estilos do formulário */
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 2px solid #007bff; /* Azul forte */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: #007bff;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+  height: 100px; /* Altura padrão */
+}
+
+.label-50 {
+  display: inline-block;
+  width: 48%;
+}
+
+.label-50 input, .label-50 select {
+  width: 100%;
+}
+
+/* Checkboxes e Radio Buttons */
+.checkbox-inline, .radio-inline {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+.d-block {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Botões */
+.center {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Azul forte */
+  color: #ffffff; /* Texto branco */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Azul mais escuro */
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+    <title>Agenda de Contatos</title> <!-- Título da página exibido na aba do navegador -->
+
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Link para o arquivo de estilo CSS  -->
+
+    <script src="js/comportamentos.js" type="text/javascript"></script> <!-- Script JavaScript para comportamentos dinâmicos -->
+</head>
+<body>
+    <main>
+        <header>
+            <a id="mostra-form-cadastro" href="#">Inserir Novo Contato</a> <!-- Link para abrir o formulário de cadastro -->
+        </header>
+        <div id="formulario-cadastro-contato"> <!-- Div que contém o formulário de cadastro -->
+            <fieldset>
+                <legend>Cadastrar um Novo Contato</legend> <!-- Título do fieldset -->
+                <form id="form-contato" autocomplete="nope"> <!-- Formulário para cadastrar contatos -->
+                    <label>Nome: <input type="text" id="nome" name="nome" required/></label> <!-- Campo de entrada para o nome, obrigatório -->
+                    <label>E-mail: <input type="email" id="email" name="email" required/></label> <!-- Campo de entrada para o e-mail, obrigatório -->
+                    <label>Telefone: <input type="text" id="telefone" name="telefone" required/></label> <!-- Campo de entrada para o telefone, obrigatório -->
+                    <label>Cidade: <input type="text" name="cidade" id="cidade" required/></label> <!-- Campo de entrada para a cidade, obrigatório -->
+
+                    <fieldset> <!-- Fieldset para selecionar um avatar -->
+                        <legend>Selecione um Avatar</legend> <!-- Título do fieldset -->
+                        <ul>
+                            <li>
+                                <label>
+                                    <img src="img/homer.jpg"> <!-- Imagem do avatar Homer -->
+                                    <input type="radio" name="avatar_selecionado" value="homer.jpg"> <!-- Opção de avatar -->
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/marge.png"> <!-- Imagem do avatar Marge -->
+                                    <input type="radio" name="avatar_selecionado" value="marge.png"> <!-- Opção de avatar -->
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/bart.jpg"> <!-- Imagem do avatar Bart -->
+                                    <input type="radio" name="avatar_selecionado" value="bart.jpg"> <!-- Opção de avatar -->
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/lisa.png"> <!-- Imagem do avatar Lisa -->
+                                    <input type="radio" name="avatar_selecionado" value="lisa.jpg"> <!-- Opção de avatar -->
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button id="esconde-form-cadastro" type="button">Cancelar</button> <!-- Botão para cancelar o cadastro -->
+                    <button type="submit">Salvar</button> <!-- Botão para salvar o contato -->
+                </form>
+            </fieldset>
+        </div>
+
+        <div id="lista-contatos"> <!-- Div que contém a lista de contatos inseridos -->
+            <h1>Contatos Inseridos</h1> <!-- Título da seção -->
+            <table id="tbl-contatos"> <!-- Tabela para exibir os contatos -->
+                <thead>
+                    <tr>
+                        <th></th> <!-- Coluna vazia para ícones de remoção -->
+                        <th></th> <!-- Coluna vazia para os avatares -->
+                        <th>Nome:</th> <!-- Cabeçalho da coluna para o nome -->
+                        <th>E-mail:</th> <!-- Cabeçalho da coluna para o e-mail -->
+                        <th>Telefone:</th> <!-- Cabeçalho da coluna para o telefone -->
+                        <th>Cidade:</th> <!-- Cabeçalho da coluna para a cidade -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/cross.png" class="botao-remover-contato"/></td> <!-- Ícone para remover contato -->
+                        <td><img src="img/homer.jpg"/></td> <!-- Avatar do contato -->
+                        <td>Prof. Tiago</td> <!-- Nome do contato -->
+                        <td>tiago.silva476@etec.sp.gov.br</td> <!-- E-mail do contato -->
+                        <td>(16) 99999-9999</td> <!-- Telefone do contato -->
+                        <td>Cajuru</td> <!-- Cidade do contato -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

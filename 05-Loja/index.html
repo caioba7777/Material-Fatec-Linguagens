@@ -1,0 +1,143 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade para diferentes tamanhos de tela -->
+    <title>Loja de Hardware - Tela Inicial</title> <!-- Título da página exibido na aba do navegador -->
+    
+    <!-- Links para as folhas de estilo CSS que definem a aparência da página -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header> <!-- Cabeçalho da página -->
+        <div class="banner"> <!-- Div para o banner da loja -->
+            <img src="https://www.designi.com.br/images/preview/10679357.jpg" alt="banner"> <!-- Imagem do banner -->
+        </div>
+        <h1>Loja de Hardware - Tela Inicial</h1> <!-- Título principal da página -->
+    </header>
+    
+    <nav> <!-- Navegação principal da página -->
+        <a href="index.html">Início</a> <!-- Link para a página inicial -->
+        <a href="#section1">Produtos</a> <!-- Link para a seção de produtos -->
+        <a href="#section2">Sobre</a> <!-- Link para a seção sobre a loja -->
+        <a href="#section3">Contato</a> <!-- Link para a seção de contato -->
+        <a href="cadastro.html"> Cadastrar-Se</a> <!-- Link para a página de cadastro -->
+    </nav>
+    <div class="container" id="section1"> <!-- Seção de produtos -->
+      <div class="products">  <!-- Div que agrupa os produtos -->
+        <!-- Cada produto é encapsulado em uma div com a classe "product" -->
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/m/c/mcr-bkg-rbw015.jpg" alt="Produto 1">
+              <h2> Teclado Mecanico Gamer Mancer Black Ghost, Rainbow, Switch Huano Vermelho, Preto, MCR-BKG-RBW01.</h2> <!-- Nome e descrição do produto -->
+              <p>R$ 159,99</p> <!-- Preço do produto -->
+              <button>Comprar</button> <!-- Botão para comprar o produto -->
+          </div>
+           <!-- Mais produtos seguindo a mesma estrutura -->
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/m/c/mcr-b450m-dav21.jpg" alt="Produto 2">
+              <h2>Placa Mae Mancer B450M DA V2, DDR4, Socket AM4, M-ATX, Chipset AMD B450, MCR-B450M-DAV2</h2>
+              <p>R$ 389,99</p>
+              <button>Comprar</button>
+          </div>
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/p/g/pg-hx71l-anvbk01261621211.jpg" alt="Produto 3">
+              <h2>Gabinete Gamer Pichau HX710L 17 Anniversary Edition, Mid-Tower, Lateral de Vidro, Preto, PG-HX71L-ANVBK</h2>
+              <p>R$ 269,99</p>
+              <button>Comprar</button>
+          </div>
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/m/c/mcr-trc-bkg16411232140105.jpg" alt="Produto 3">
+              <h2>Cadeira Gamer Mancer Tyr C, Espuma Moldada, Braco 3D, Preto e Cinza, MCR-TRC-BKG</h2>
+              <p>R$ 779,99</p>
+              <button>Comprar</button>
+          </div>
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/p/g/pg-cfvfs49u-bl01.jpg" alt="Produto 3">
+              <h2>Monitor Gamer Pichau Cepheus Fuse VPRO49 Ultra, 49 Pol, Nano IPS, Curvo, 2K, 1ms, 144Hz, FreeSync, HDMI/DP, PG-CFVFS49U-BL01</h2>
+              <p>R$ 4.999,99</p>
+              <button>Comprar</button>
+          </div>
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/c/a/ca-90112013.jpg" alt="Produto 3">
+              <h2>Headset Gamer Corsair Void RGB Elite Wireless Carbon 7.1 Drivers 50mm, CA-9011201-NA</h2>
+              <p>R$ 689,99</p>
+              <button>Comprar</button>
+          </div>
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/p/c/pch-rvr-2tb1.jpg" alt="Produto 3">
+              <h2>SSD Pichau Rover, 2TB, M.2 2280, PCIe NVMe, Leitura 2100MB/s, Gravacao 1500MB/s, PCH-RVR-2TB</h2>
+              <p>R$ 689,99</p>
+              <button>Comprar</button>
+          </div>
+          <div class="product">
+              <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/d/u/dual-rx7800xt-o16g.jpg" alt="Produto 3">
+              <h2>Placa de Video Asus Radeon RX 7800 XT Dual OC Edition, 16GB, GDDR6, 256-bit, DUAL-RX7800XT-O16G</h2>
+              <p>R$ 3.659,99</p>
+              <button>Comprar</button>
+          </div>
+      </div>
+  </div>
+    
+    <div id="section2"> <!-- Seção sobre a loja -->
+        <main>
+          <div id="sobre-nos"> <!-- Div que contém informações sobre a loja -->
+            <aside> <!-- Seção lateral para um vídeo -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrjG8T3oKzo" title="YouTube video player" frameborder="0" allowfullscreen></iframe> <!-- Vídeo do YouTube -->
+            </aside>
+            <article> <!-- Seção principal para informações detalhadas -->
+              <h2>Sobre nós</h2> <!-- Subtítulo sobre a loja -->
+              <p>
+                Bem-vindo à nossa loja de hardware online! Somos uma equipe apaixonada por tecnologia 
+                e dedicada a oferecer a melhor experiência de compra para entusia
+                stas, profissionais e criadores de todos os níveis.
+              </p> <!-- Descrição da loja e seus objetivos -->
+    
+              <h2>Missão</h2> <!-- Subtítulo da missão da empresa .-->
+              <p>
+                 Fundada com o objetivo de tornar o acesso a produtos de hardware de qualidade mais fácil e conveniente,
+                 nossa loja oferece uma ampla variedade de componentes, ferramentas e equipamentos de última geração.
+              </p> <!-- Descrição da missão -->
+    
+              <h2>Visão</h2> <!-- Subtítulo da visão da empresa -->
+              <p> 
+                Aqui, acreditamos que a tecnologia é uma força transformadora. Por isso, nos empenhamos em
+                fornecer não apenas produtos, mas também conhecimento e suporte para ajudar você a realizar
+                seus projetos.
+              </p> <!-- Descrição da visão -->
+    
+              <h2>Valores</h2> <!-- Subtítulo dos valores da empresa -->
+              <p> 
+                Estamos comprometidos com a transparência, a inovação e a sustentabilidade, buscando 
+                constantemente maneiras de melhorar nossos serviços e reduzir nosso impacto no meio ambiente.
+              </p> <!-- Descrição dos valores -->
+            </article>
+          </div>
+          
+          <div id="fotos"> <!-- Seção para imagens relacionadas -->
+            <figure>
+                <img src="images/sobre/mapa.jpeg" alt="Localização da Loja"/> <!-- Imagem do mapa -->
+                <figcaption> Localização</figcaption> <!-- Legenda da imagem -->
+            </figure>
+            
+            <figure>
+              <img id="entrada-loja" src="https://th.bing.com/th/id/OIP.b3ukt-YDUHnAsivpKlafRAAAAA?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Entrada da Loja"/> <!-- Imagem da entrada da loja -->
+              <figcaption>Entrada da Loja</figcaption> <!-- Legenda da imagem -->
+            </figure>
+
+            <figure>
+              <img id="nossa-loja" src="https://th.bing.com/th/id/OIP.527pKiq9wmWDFIm0AO6cPwHaE8?w=1536&h=1024&rs=1&pid=ImgDetMain" alt="Nossa Loja"/> <!-- Imagem da loja -->
+              <figcaption> Nossa Loja </figcaption> <!-- Legenda da imagem -->
+            </figure>
+          </div>
+        </main>
+    </div>
+</body>
+<footer> <!-- Rodapé da página -->
+    <div class="container" id="section3"></div> <!-- Div para a seção de contato, mas vazia aqui -->
+    Loja de Hardware <!-- Nome da loja -->
+    <address> <!-- Endereço da loja -->
+      Rua da Fatec, 286 - Jaú - <!-- Endereço completo -->
+      <abbr title="São Paulo - Brasil"> SP </abbr> <!-- Abreviação do estado -->
+    </address>
+</footer>
+</html>

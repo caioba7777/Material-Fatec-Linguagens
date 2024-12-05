@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+  <head>
+    <meta charset="utf-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade para dispositivos móveis -->
+    <title>Cadastro de Produtos</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="CSS/estilos.css"/> <!-- Link para a folha de estilos principal -->
+    <link rel="stylesheet" href="CSS/estilos_formulario.css"/> <!-- Link para a folha de estilos específica do formulário -->
+  </head>
+  <body>
+    <div id="corpo"> <!-- Div que envolve o conteúdo principal -->
+      <header> <!-- cabeçalho-->
+        <h1> Loja de Hardware </h1> <!-- Cabeçalho da página com o nome da loja -->
+      </header><!-- fim do cabeçalho-->
+      <main>
+        <h2>Cadastro de Produtos</h2> <!-- Subtítulo indicando a finalidade da página -->
+        
+        <form action="outra_pagina.html" method="GET" target="_blank" enctype="multipart/form-data"> <!-- Formulário para cadastro de produtos -->
+            <fieldset> <!-- Agrupa os elementos do formulário -->
+          <legend> Dados do Produto </legend> <!-- Título do grupo de dados -->
+
+          <label>
+            Descrição: <input type="text" name="txt_descrição" maxlength="20" placeholder="Modelo e Aplicações" autofocus required/> <!-- Campo para descrição do produto -->
+          </label>
+
+          <label> 
+            Código: <input type="text" name="txt_codigo" placeholder="999-99" pattern="[0-9]{3}-[0-9]{2}" required/> <!-- Campo para código do produto com validação de formato -->
+          </label>
+
+          <p class="label-50"> <!-- Parágrafo para organizar os checkboxes -->
+            <span class="d-block">Vender em:</span>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="chk_vender" value="loja_virtual"/> <!-- Checkbox para vender em loja virtual -->
+                Loja Virtual
+            </label>
+          
+            <label class="checkbox-inline">
+                <input type="checkbox" name="chk_vender" value="loja_fisica"/> <!-- Checkbox para vender em loja física -->
+                Loja Física
+            </label>  
+          </p>
+
+          <p class="label-50"> <!-- Parágrafo para organizar os radio buttons -->
+            <span class="d-block">Está em Promoção?</span>
+            <label class="checkbox-inline">
+                <input type="radio" name="rdo_promocao" value="S"/> <!-- Radio button para opção "Sim" -->
+                Sim
+            </label>
+
+            <label class="checkbox-inline">
+                <input type="radio" name="rdo_promocao" value="N" checked/> <!-- Radio button para opção "Não", com valor padrão -->
+                Não
+            </label>
+          </p>
+          <label>Especificações:
+            <textarea name="txt_especificacoes" placeholder="Informações técnica do produto" required></textarea> <!-- Campo de texto para especificações do produto -->
+          </label>
+
+          <label class="label-50">
+            Preço de Custo: <input type="number" min="0" name="txt_preco_custo"/> <!-- Campo para preço de custo com valor mínimo 0 -->
+          </label>
+
+          <label class="label-50">
+            Preço de Venda: <input type="number" min="0" name="txt_preco_venda"/> <!-- Campo para preço de venda com valor mínimo 0 -->
+          </label>
+
+          <label>
+            Foto: <input type="file" name="txt_foto" accept="image/*"/> <!-- Campo para upload de foto do produto -->
+          </label>
+
+          <label class="label-50">
+            Categoria:
+            <select name="txt_marca" required> <!-- Seleção para escolher a categoria do produto -->
+                <option value="" disabled>Selecione...</option> <!-- Opção padrão desabilitada -->
+                <optgroup label="Processador"> <!-- Agrupamento para processadores -->
+                    <option value="1">AMD</option>
+                    <option value="2">Intel</option>
+                </optgroup>
+
+                <optgroup label="Memória RAM"> <!-- Agrupamento para memória RAM -->
+                    <option value="3">Kingston</option>
+                    <option value="4">Adata</option>
+                    <option value="5">Corsair</option>
+                </optgroup>
+
+                <optgroup label="Placa de Vídeo"> <!-- Agrupamento para placas de vídeo -->
+                    <option value="6">Nvidia</option>
+                    <option value="7">EVGA</option>
+                    <option value="8">Galax</option>
+                </optgroup>
+            </select>
+          </label>
+        </fieldset><!-- fim do agrupamento do formulario-->
+        <p class="center"> <!-- Parágrafo centralizado para os botões -->
+            <button type="submit" class="botao-enviar">Salvar</button> <!-- Botão para enviar o formulário -->
+            <button type="reset">Limpar</button> <!-- Botão para limpar os campos do formulário -->
+        </p> <!-- fim do paragrafo-->
+        </form> <!-- fim do formulario-->
+      </main><!-- fim do conteudo principal-->
+      <footer> <!-- rodape-->
+        Loja de Hardware Ltda <!-- Informações de rodapé da loja -->
+        <address>
+            Rua da Fatec, 286
+            -Jaú- <abbr title="São Paulo - Brasil">SP</abbr> <!-- Endereço da loja com abreviação do estado -->
+        </address><!-- fim do rodape-->
+      </footer>
+  </body>
+</html>
