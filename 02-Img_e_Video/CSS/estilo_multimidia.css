@@ -1,0 +1,27 @@
+/* Vídeo */
+aside video {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #00ffff; /* Moldura neon */
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* Imagens e legendas */
+figure {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+figure img {
+  border: 3px solid #ff0066; /* Moldura neon rosa */
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff66cc;
+}
+
+figcaption {
+  color: #ffcc00; /* Amarelo neon */
+  text-shadow: 1px 1px 5px #ffaa33;
+  margin-top: 10px;
+}

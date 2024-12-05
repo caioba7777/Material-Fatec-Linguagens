@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head> <!--Cabeça do site, esses códigos não são visiveis para o usuario-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Tabelas Semânticas</title> <!-- Essa tag é a unica que parece pro usuario no título da aba-->
+
+    <link rel="stylesheet" href="CSS/estilos.css" /> <!-- aqui estamos linkando o CSS no nosso site-->
+    <link rel="stylesheet" href="CSS/estilos_tabela.css" /> <!-- aqui estamos linkando o CSS no nosso site-->
+
+  </head> <!-- aqui termina a cabeça do site-->
+
+  <body><!--Tudo dentro da div corpo aparece para o usuario-->
+    <div id="corpo"><!-- Corpo do site--> 
+      <header> <!-- cabeçario do site -->
+        <h1>Loja de Hardware</h1> <!-- titulo do cabeçario -->
+      </header> <!-- aqui termina o cabeçario-->
+
+      <main> <!-- essa tag é a PRINCIPAL ou seja é ela que fica no meio da página e embaixo do cabeçario-->
+        <h2>Listas de Produtos</h2> <!-- Subtítulo do conteudo da página-->
+        <table> <!-- essa tag é a de tabela-->
+          <thead> <!-- (THEAD) cebaçario da tabela-->
+            <tr> <!-- (TR) Linha de cabeçario da tabela-->
+              <th>Código</th> <!--(TH) Coluna do cabeçario da tabela-->
+              <th>Categoria</th> <!--(TH) Coluna do cabeçario da tabela-->
+              <th>Descrição</th> <!--(TH) Coluna do cabeçario da tabela-->
+              <th>Preço</th> <!--(TH) Coluna do cabeçario da tabela-->
+              <th>Imagem</th> <!--(TH) coluna do cabeçario da tabela -->
+            </tr> <!-- aqui termina a linha do cabeçario da tabela-->
+          </thead> <!-- aqui termina o cabeçario da tabela-->
+
+          <tbody> <!-- (tbody) corpo da tabela-->
+            <tr> <!-- Linha da tabela do º produto da tabela-->
+              <td>896</td> <!-- (TD) Colunas da tabela-->
+              <td>Precessador</td>
+              <td>Ryzen 7 5800</td>
+              <td>R$ 1862,00</td>
+              <td class="img"><img src="img/ryzen.jpg" alt="ryzen 7"></td><!-- adicionando uma imagem do produto na tabela-->
+            </tr><!-- fim da linha do primeiro produto da tabela-->
+
+            <tr class="zebra"> <!-- Linha da tabela aqui tem uma formatação 
+              da cor da linha fzd ter um efeito de listras entre as linhas-->
+              <td>452</td> <!-- (TD) Colunas da tabela-->
+              <td>Placa de Vídeo</td>
+              <td>Nvidia RTX 4070 TI</td>
+              <td>R$ 4822,00</td>
+              <td class="img"><img src="img/placa_nvidia_4070.jpg" alt="Placa de Vídeo Nvidia RTX4070"></td><!-- adicionando uma imagem do produto na tabela-->
+            </tr><!-- fim da linha do segundo produto da tabela-->
+
+            <tr><!-- terceira linha de produto da tabela-->
+              <td>963</td> <!-- (TD) Colunas da tabela-->
+              <td>Placa Mãe</td>
+              <td>Asus B450 TUF</td>
+              <td>R$ 989,56</td>
+              <td class="img"><img src="img/placa_mae_asusB450.jpg" alt="Placa Mãe AsusB450"></td><!-- adicionando uma imagem do produto na tabela-->
+            </tr><!-- fim da terceira linha da tabela-->
+
+          </tbody><!-- fim do corpo da tabela-->
+        </table><!-- fim da tabela-->
+      </main><!--aqui termina o conteudo principal da página-->
+
+      <footer> <!-- Rodapé-->
+        Loja de Hardware
+        <address>
+          Rua da Fatec, 286 - Jaú -
+          <abbr title="São Paulo - Brasil"> SP </abbr>
+        </address>
+      </footer><!-- aqui termina o rodapé-->
+
+    </div>
+  </body>
+</html>

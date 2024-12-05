@@ -1,0 +1,45 @@
+/* Estilos para a tabela */
+table {
+  width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+  border-collapse: collapse; /* Remove espaços entre as células da tabela */
+  margin-bottom: 20px; /* Adiciona margem inferior à tabela */
+}
+
+table th, table td {
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 10px; /* Adiciona espaçamento interno nas células */
+  border: 1px solid #ddd; /* Adiciona bordas finas e cinzas às células */
+}
+
+th {
+  background-color: #0056b3; /* Cor de fundo das células de cabeçalho */
+  color: white; /* Cor do texto do cabeçalho */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Fundo cinza claro para linhas pares */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Fundo branco para linhas ímpares */
+}
+
+tbody tr:hover {
+  background-color: #e3f2fd; /* Fundo azul claro quando o mouse passa por cima */
+}
+
+td.img {
+  text-align: center; /* Centraliza as imagens dentro das células */
+}
+  
+.zebra{ /*  muda a cor da linha da  tabela dando o efeito de zebra*/
+  background: #4d4b4b;
+}
+
+img {
+  max-width: 100px; /* Limita a largura máxima das imagens */
+  height: auto; /* Mantém a proporção das imagens */
+  border-radius: 5px; /* Adiciona bordas levemente arredondadas às imagens */
+}
+

@@ -1,0 +1,67 @@
+/* Resetando margens e espaçamentos padrão */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no tamanho total do elemento */
+}
+
+/* Definições globais */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte principal da página */
+  background-color: #f4f4f4; /* Cor de fundo da página */
+  color: #333; /* Cor do texto padrão */
+  line-height: 1.6; /* Altura das linhas para facilitar a leitura */
+  margin: 0; /* Remove margens padrão do body */
+  padding: 0; /* Remove preenchimentos padrão do body */
+}
+
+#corpo {
+  max-width: 1200px; /* Define a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+  background-color: #fff; /* Define o fundo branco para o contêiner principal */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra ao redor do contêiner */
+  border-radius: 10px; /* Bordas arredondadas do contêiner principal */
+}
+
+header {
+  background-color: #0056b3; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto no cabeçalho */
+  padding: 20px; /* Espaçamento interno do cabeçalho */
+  text-align: center; /* Centraliza o texto dentro do cabeçalho */
+  border-radius: 10px 10px 0 0; /* Bordas arredondadas superiores */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Tamanho da fonte do título principal */
+}
+
+main {
+  padding: 20px; /* Espaçamento interno do conteúdo principal */
+}
+
+main h2 {
+  margin-bottom: 20px; /* Espaçamento inferior do subtítulo principal */
+  color: #0056b3; /* Cor do texto do subtítulo principal */
+  font-size: 1.8rem; /* Tamanho da fonte do subtítulo principal */
+}
+
+/* Rodapé */
+footer {
+  background-color: #0056b3; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto no rodapé */
+  text-align: center; /* Centraliza o texto dentro do rodapé */
+  padding: 10px 0; /* Espaçamento interno vertical do rodapé */
+  border-radius: 0 0 10px 10px; /* Bordas arredondadas inferiores */
+  margin-top: 20px; /* Adiciona espaçamento acima do rodapé */
+}
+
+footer address {
+  font-style: normal; /* Remove o estilo itálico padrão do address */
+  margin-top: 5px; /* Adiciona espaçamento superior ao conteúdo do address */
+}
+
+footer abbr {
+  text-decoration: none; /* Remove a linha de sublinhado padrão do abbr */
+  border-bottom: 1px dotted #ccc; /* Adiciona uma linha pontilhada abaixo do texto */
+}

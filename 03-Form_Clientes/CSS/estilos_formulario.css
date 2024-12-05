@@ -1,0 +1,60 @@
+/* Estilos do formulário */
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 2px solid #0056b3; /* Azul escuro */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: #0056b3;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.label-50 {
+  display: inline-block;
+  width: 48%;
+}
+
+.label-50 input, .label-50 select {
+  width: 100%;
+}
+
+/* Centralizando os botões */
+.center {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0056b3; /* Azul escuro */
+  color: #fff; /* Texto branco */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003d80; /* Azul mais escuro */
+}

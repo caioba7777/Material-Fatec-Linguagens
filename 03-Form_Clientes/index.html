@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head> <!-- cabeça do site, não aparece pro usuario no site-->
+    <meta charset="utf-8"> <!-- serve para poder usar ç e outros caracteres especiais...-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title> <!-- titulo que aparece na aba da pagina-->
+    <link rel="stylesheet" href="CSS/estilos.css"/> <!-- linka o css no nosso site-->
+    <link rel="stylesheet" href="CSS/estilos_formulario.css"/> <!-- linka o css no nosso site-->
+  </head> <!-- fecha a cabeça do site-->
+
+  <body> <!-- conteudo do site -->
+    <div id="corpo"> <!-- divisão do site (corpo) -->
+
+      <header> <!-- cabeçario do site-->
+        <h1> Loja de Hardware <h1> <!-- titulo do site-->
+      </header> <!-- fim do cabeçario-->
+
+      <main> <!-- conteudo da principal página-->
+        <h2>Cadastro de Clientes</h2> <!-- subtitulo -->
+
+        <form action="outra_pagina.html" method="get"><!--manda os dados do formulario para a pagina destinada-->
+
+            <fieldset> <!-- usado para agrupar os elementos do formulario-->
+
+                <legend>Dados Pessoais</legend> <!-- legenda do formulario-->
+
+                <label> <!-- texto para indicar o que colocar no campo de entrada-->
+                    Nome: <input type="text" name="txt_nome" placeholder="Seu nome completo" required/>
+                    <!-- entrada de dados do usuario, required: deixa o campo obrigatio-->
+                </label><!-- fim do texto -->
+
+                <label> <!-- texto para indicar o que colocar no campo de entrada-->
+                    E-mail: <input type="email" name="txt_email" placeholder="Seu melhor e-mail" required/>
+                </label> <!--fim do texto-->
+
+                <label class="label-50"> <!-- a class=label-50 é usada para formatar os elementos
+                     podendo deixar 2 elementos na mesma linha-->
+                    Telefone: <input type="number" name="txt_telefone" placeholder="Seu telefone" required/>
+                    <!-- entrada de dados do usuario-->
+                </label><!--fim do texto-->
+
+                <label class="label-50"> <!-- a class=label-50 é usada para formatar os elementos
+                     podendo deixar 2 elementos na mesma linha-->
+                    Data de Nascimento: <input type="date" name="txt_data_nasc" required/>
+                </label>
+
+                <label class="label-50"> <!-- a class=label-50 é usada para formatar os elementos
+                    podendo deixar 2 elementos na mesma linha-->
+                    CPF: <input type="number" name="txt_cpf" placeholder="somento números" required/>
+                </label>
+
+                <label class="label-50"> <!-- a class=label-50 é usada para formatar os elementos
+                    podendo deixar 2 elementos na mesma linha-->
+                    Senha: <input type="password" name="txt_senha" placeholder="Sua melhor senha" required/>
+                </label>
+
+            </fieldset> <!--fim do agrupamento do formulario-->
+
+            <fieldset> <!-- agrupa os elementos do formulario-->
+
+                <legend>Endereço</legend><!--legenda do grupo do formulario-->
+
+                <label class="label-50"> <!-- a class=label-50 é usada para formatar os elementos
+                    podendo deixar 2 elementos na mesma linha-->
+                    Rua: <input type="text" name="txt_rua" required/>
+                </label>
+
+                <label class="label-50">
+                    Bairro: <input type="text" name="txt_bairro" required/>
+                </label>
+
+                <label class="label-50">
+                    Cidade: <input type="text" name="txt_cidade" required/>
+                </label>
+
+                <label class="label-50"><!--caixa de texto do menu de opções, essa class faz 
+                    o conteudo ficar 50% da dela podendo ficar do lado de outro (label com um input)-->
+                    Estado: 
+                    <select> <!-- fornece um menu de opções-->
+                        <option value="">Selecione...</option><!--opções do menu-->
+                        <option value="SP">São Paulo</option><!--opções do menu-->
+                        <option value="MG">Minas Gerais</option><!--opções do menu-->
+                        <option value="RJ">Rio de Janeiro</option> <!--opções do menu-->
+                        <option value="PR">Paraná</option> <!--opções do menu-->
+                    </select> <!--fim do menu de opções-->
+                </label> <!-- fim da caixa de texto do menu de opções-->
+            </fieldset> <!-- fim do agrupamento do formulario-->
+
+            <p class="center"> <!-- paragrafo-->
+                <button type="submit" class="botao-enviar">Enviar</button><!--botão de enviar os dados-->
+                <button type="reset">Limpar</button> <!-- botão de limpar os campos-->
+            </p><!-- fim do paragrafo-->
+        </form><!-- fim do formulario -->
+      </main><!-- fim do conteudo principal do site-->
+      <footer> <!-- rodape-->
+        Loja de Hardware Ltda
+        <address>
+            Rua da Fatec, 286
+            - Jaú - <ABBR title="São Paulo - Brasil"> SP </ABBR>
+        </address>
+      </footer><!-- fim do radape-->
+    </div> <!-- fechamento da divisão do corpo do site-->
+  </body><!-- fim do conteudo do site-->
+</html><!-- fim do codigo html-->
