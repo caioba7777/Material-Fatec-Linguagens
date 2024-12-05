@@ -1,0 +1,592 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head> <!-- Início da seção de cabeçalho -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que a página se ajuste em dispositivos móveis -->
+    
+    <link rel="stylesheet" href="css/estilos.css"/> <!-- Link para o arquivo de estilo CSS -->
+    <script type="text/javascript" src="js/comportamentos.js"></script> <!-- Link para o arquivo de script JavaScript -->
+    <title>SHOW DO MILHÃO</title> <!-- Título da aba ou página exibida no navegador -->
+</head><!-- Fim do cabeçalho -->
+
+<body> <!-- Início do corpo da página, que contém o conteúdo visível ao usuário -->
+    <main> <!-- Elemento principal da página -->
+        <fieldset> <!-- Agrupa elementos de formulário -->
+            <legend> <!-- Legenda explicativa para o campo -->
+                <img src="img_audio/img/logo.jpg" /> <!-- Imagem do logo do jogo -->
+            </legend> <!-- Fim da legenda -->
+            <section id="comecar"> <!-- Seção para o botão de "Começar a Jogar" -->
+                <button id="btn-comecar">Começar a Jogar!</button> <!-- Botão que inicia o jogo -->
+            </section> <!-- Fim da seção "Começar" -->
+            
+            <section id="lista-perguntas"> <!-- Seção onde as perguntas serão exibidas -->
+                
+                <!-- 1ª RODADA: Pergunta Valendo 1000 -->
+                <div id="pergunta1000" class="pergunta"> <!-- Container para a pergunta -->
+                    <form id="form-pergunta1000"> <!-- Formulário para a pergunta 1000 -->
+                        <p>Capixaba, é denominação de quem nasce em qual estado brasileiro?</p> <!-- Texto da pergunta -->
+                        <ul> <!-- Lista de alternativas -->
+                            <li> <!-- Alternativa 1 -->
+                                <label>
+                                    <span>1</span><input type="radio" name="pergunta1000" value="1"/> <!-- Rádio para alternativa 1 -->
+                                    RIO GRANDE DO SUL
+                                </label>
+                            </li>
+                            <li> <!-- Alternativa 2 -->
+                                <label>
+                                    <span>2</span><input type="radio" name="pergunta1000" value="2"/>
+                                    SANTA CATARINA
+                                </label>
+                            </li>
+                            <li> <!-- Alternativa 3 -->
+                                <label>
+                                    <span>3</span><input type="radio" name="pergunta1000" value="3"/>
+                                    ESPÍRITO SANTO
+                                </label>
+                            </li>
+                            <li> <!-- Alternativa 4 -->
+                                <label>
+                                    <span>4</span><input type="radio" name="pergunta1000" value="4"/>
+                                    PARAÍBA
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 1000</button> <!-- Botão de envio -->
+                    </form>
+                </div> <!-- Fim da pergunta 1000 -->
+
+                <!-- 2ª RODADA: Pergunta Valendo 2000 -->
+                <div id="pergunta2000" class="pergunta"> <!-- Container para a pergunta -->
+                    <form id="form-pergunta2000"> <!-- Formulário para a pergunta 2000 -->
+                        <p>De quem é a frase "penso, logo existo?"</p> <!-- Texto da pergunta -->
+                        <ul> <!-- Lista de alternativas -->
+                            <li> <!-- Alternativa 1 -->
+                                <label>
+                                    <span>1</span><input type="radio" name="pergunta2000" value="1"/>
+                                    PLATÃO
+                                </label>
+                            </li>
+                            <li> <!-- Alternativa 2 -->
+                                <label>
+                                    <span>2</span><input type="radio" name="pergunta2000" value="2"/>
+                                    JÚLIO VERNE
+                                </label>
+                            </li>
+                            <li> <!-- Alternativa 3 -->
+                                <label>
+                                    <span>3</span><input type="radio" name="pergunta2000" value="3"/>
+                                    ARISTÓTELES
+                                </label>
+                            </li>
+                            <li> <!-- Alternativa 4 -->
+                                <label>
+                                    <span>4</span><input type="radio" name="pergunta2000" value="4"/>
+                                    RENÉ DESCARTES
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 2000</button>
+                    </form>
+                </div> <!-- Fim da pergunta 2000 -->
+
+                <!-- Pergunta 3, 4 e 5 seguem o mesmo formato -->
+                
+                <!-- Pergunta 3 -->
+                <div id="pergunta3000" class="pergunta">
+                    <form id="form-pergunta3000">
+                        <p>Quem é a namorada do Mickey?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta3000" value="1"/>
+                                    MARGARIDA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta3000" value="2"/>
+                                    MINNIE
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta3000" value="3"/>
+                                    A PEQUENA SEREIA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta3000" value="4"/>
+                                    OLÍVIA PALITO
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 3000</button>
+                    </form>
+                </div> <!-- Fim da pergunta 3000 -->
+
+                <!-- Pergunta 4 -->
+                <div id="pergunta4000" class="pergunta">
+                    <form id="form-pergunta4000">
+                        <p>Quem proclamou a república no Brasil em 1889?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta4000" value="1"/>
+                                    DUQUE DE CAXIAS
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta4000" value="2"/>
+                                    MARECHAL RONDON
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta4000" value="3"/>
+                                    DOM PEDRO II
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta4000" value="4"/>
+                                    MARECHAL DEODORO
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 4000</button>
+                    </form>
+                </div> <!-- Fim da pergunta 4000 -->
+
+                <!-- Pergunta 5 -->
+                <div id="pergunta5000" class="pergunta">
+                    <form id="form-pergunta5000">
+                        <p>A água ferve a quantos graus centígrados?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta5000" value="1"/>
+                                    200
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta5000" value="2"/>
+                                    100
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta5000" value="3"/>
+                                    170
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta5000" value="4"/>
+                                    220
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 5000</button>
+                    </form>
+                </div> <!-- Fim da pergunta 5000 -->
+
+<!-- 2ª RODADA-->
+
+                <div id="pergunta10000" class="pergunta">
+                    <form id="form-pergunta10000">
+                        <p> Em qual país surgiu a máfia?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta10000" value="1"/>
+                                    ESTADOS UNIDOS
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta10000" value="2"/>
+                                    INGLATERRA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta10000" value="3"/>
+                                    ITÁLIA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta10000" value="4"/>
+                                    ESPANHA
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 10000</button>
+                    </form>
+                </div>
+
+
+                
+                <div id="pergunta20000" class="pergunta">
+                    <form id="form-pergunta20000">
+                        <p> Segundo a Bíblia, quantos apóstolos tinha Jesus Cristo?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta20000" value="1"/>
+                                    DEZ
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta20000" value="2"/>
+                                    ONZE
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta20000" value="3"/>
+                                    DOZE
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta20000" value="4"/>
+                                    TREZE
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 20000</button>
+                    </form>
+                </div>
+
+
+                
+                <div id="pergunta30000" class="pergunta">
+                    <form id="form-pergunta30000">
+                        <p> Qual é o profissional que conduz o elevador?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta30000" value="1"/>
+                                    CONDUTOR
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta30000" value="2"/>
+                                    OPERADOR
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta30000" value="3"/>
+                                    ASCENSORISTA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta30000" value="4"/>
+                                    RECPCIONISTA
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 30000</button>
+                    </form>
+                </div>
+
+
+
+                
+                <div id="pergunta40000" class="pergunta">
+                    <form id="form-pergunta40000">
+                        <p> Quantos titulares possui uma equipe de vôlei?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta40000" value="1"/>
+                                    CINCO
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta40000" value="2"/>
+                                    SEIS
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta40000" value="3"/>
+                                    SETE
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta40000" value="4"/>
+                                    OITO
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 40000</button>
+                    </form>
+                </div>
+
+
+
+                
+                <div id="pergunta50000" class="pergunta">
+                    <form id="form-pergunta50000">
+                        <p> Quem é a mulher do Tarzan?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta50000" value="1"/>
+                                    DIANA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta50000" value="2"/>
+                                    LOUIS LAINE
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta50000" value="3"/>
+                                    JANE
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta50000" value="4"/>
+                                    CHITA
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 50000</button>
+                    </form>
+                </div>
+
+
+    <!--3ª RODADA-->
+
+                <div id="pergunta100000" class="pergunta">
+                    <form id="form-pergunta100000">
+                        <p> Qual personagem  lidera o bando da floresta de Sherwood?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta100000" value="1"/>
+                                    ROBIN COOK
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta100000" value="2"/>
+                                    ROBIN BANKS
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta100000" value="3"/>
+                                    ROBIN HOOD
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta100000" value="4"/>
+                                    ROBIN DAYS
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 100000</button>
+                    </form>
+                </div>
+
+
+                
+                <div id="pergunta200000" class="pergunta">
+                    <form id="form-pergunta200000">
+                        <p> A eletrônica é parte de qual ciência?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta200000" value="1"/>
+                                    FÍSICA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta200000" value="2"/>
+                                    BIOLOGIA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta200000" value="3"/>
+                                    QUÍMICA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta200000" value="4"/>
+                                    BOTÂNICA
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 200000</button>
+                    </form>
+                </div>
+
+
+                
+                <div id="pergunta300000" class="pergunta">
+                    <form id="form-pergunta300000">
+                        <p> Que figura mitológica é conhecida por sua força extraordinária?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta300000" value="1"/>
+                                    ÁTILA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta300000" value="2"/>
+                                    MINOTAURO
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta300000" value="3"/>
+                                    PERSEU
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta300000" value="4"/>
+                                    HÉRCULES
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 300000</button>
+                    </form>
+                </div>
+
+
+
+                
+                <div id="pergunta400000" class="pergunta">
+                    <form id="form-pergunta400000">
+                        <p> Em qual parte do nosso corpo está o úmero?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta400000" value="1"/>
+                                    BRAÇO
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta400000" value="2"/>
+                                    PERNA
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta400000" value="3"/>
+                                    QUADRIL
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta400000" value="4"/>
+                                    COLUNA
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 400000</button>
+                    </form>
+                </div>
+
+
+
+                
+                <div id="pergunta500000" class="pergunta">
+                    <form id="form-pergunta500000">
+                        <p> Qual metal possui o símbolo Hg?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta500000" value="1"/>
+                                    FERRO
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta500000" value="2"/>
+                                    AÇO
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta500000" value="3"/>
+                                    MERCÚRIO
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta500000" value="4"/>
+                                    OURO
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 500000</button>
+                    </form>
+                </div>
+
+                
+                   <!--3ª RODADA-->
+
+                   <div id="pergunta1000000" class="pergunta">
+                    <form id="form-pergunta1000000">
+                        <p> Qual foi o primeiro presidente do Brasil eleito pelo povo?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span> <input type="radio" name="pergunta1000000" value="1"/>
+                                    GETÚLIO VARGAS
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span> <input type="radio" name="pergunta1000000" value="2"/>
+                                    PRUDENTE DE MORAES
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span> <input type="radio" name="pergunta1000000" value="3"/>
+                                    WASHINGTON LUÍS
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span> <input type="radio" name="pergunta1000000" value="4"/>
+                                    TANCREDO NEVES
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 1000000</button>
+                    </form>
+                </div>
+
+            </section> <!-- fim da seção das perguntas-->
+        </fieldset> <!-- fim do agrupamento dos elementos-->
+    </main> <!-- fim do conteudo principal-->
+    <audio id="silvio-santos" />
+</body>
+</html> <!-- FIM do documento html-->

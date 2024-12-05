@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Teste com Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+            <a class="navbar-brand" href="#">JP - Loja de Hardware</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tabela_bootstrap.html">Produtos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <table class="table table-hover">
+                    <thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Preço</th>
+                                <th scope="col">Disponibilidade</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Fonte de Alimentação 500W</td>
+                            <td>Fonte</td>
+                            <td>R$ 199,90</td>
+                            <td>Em Estoque</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Placa Mãe ASUS B450</td>
+                            <td>Placa Mãe</td>
+                            <td>R$ 699,00</td>
+                            <td>Em Estoque</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Memória RAM Corsair Vengeance 16GB</td>
+                            <td>Memória RAM</td>
+                            <td>R$ 349,90</td>
+                            <td>Fora de Estoque</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Placa de Vídeo NVIDIA RTX 3060</td>
+                            <td>Placa de Vídeo</td>
+                            <td>R$ 3.299,00</td>
+                            <td>Em Estoque</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>SSD Samsung 500GB</td>
+                            <td>Armazenamento</td>
+                            <td>R$ 499,00</td>
+                            <td>Em Estoque</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+    
+      <!-- Incluindo o JS do Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+    </html>
+</body>
+
+</html>

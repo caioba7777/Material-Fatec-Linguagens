@@ -1,0 +1,107 @@
+/* Zerando margens e paddings de todos os elementos */
+*{
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento (padding) padrão de todos os elementos */
+}
+
+/* Estilo geral para o corpo da página */
+body {
+    background: #013b69; /* Define um fundo azul escuro para a página */
+    font: 16px "Arial"; /* Define a fonte como Arial com tamanho de 16px */
+}
+
+/* Estilo para o elemento <fieldset>, que é utilizado para agrupar conteúdo */
+fieldset {
+    width: 60%; /* Define a largura do fieldset como 60% da largura da tela */
+    margin: 0 auto; /* Centraliza o fieldset horizontalmente */
+    padding: 1%; /* Adiciona um preenchimento de 1% ao redor do conteúdo dentro do fieldset */
+    border: 2px solid #fff; /* Define uma borda branca ao redor do fieldset */
+    border-radius: 10px; /* Arredonda as bordas do fieldset */
+}
+
+/* Estilo para o elemento <legend> dentro do <fieldset>, que serve como título do grupo */
+fieldset legend {
+    text-align: center; /* Centraliza o texto dentro da legenda */
+    width: 50%; /* Define a largura da legenda como 50% da largura do campo */
+}
+
+/* Estilo para a imagem dentro da legenda do fieldset */
+fieldset legend img {
+    width: 99%; /* A imagem ocupa 99% da largura da legenda */
+    border-right: 1px solid #fff; /* Adiciona uma borda à direita da imagem */
+    border-left: 1px solid #fff; /* Adiciona uma borda à esquerda da imagem */
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+}
+
+/* Estilo para a seção onde o jogador clica para começar o jogo */
+#comecar {
+    text-align: center; /* Centraliza o conteúdo dentro da seção */
+    padding: 10%; /* Adiciona um grande preenchimento (espacamento interno) em torno do conteúdo */
+}
+
+/* Estilo para o botão "Começar" */
+#btn-comecar {
+    padding: 10px; /* Adiciona preenchimento ao redor do botão */
+    background: transparent; /* Define o fundo do botão como transparente */
+    border: 2px solid #fff; /* Define uma borda branca ao redor do botão */
+    color: #fff; /* Define a cor do texto como branco */
+    text-transform: uppercase; /* Transforma o texto do botão em maiúsculas */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    border-radius: 10px; /* Arredonda as bordas do botão */
+}
+
+/* Estilo para as perguntas do jogo */
+.pergunta {
+    background: #fff; /* Define o fundo das perguntas como branco */
+    border-radius: 5px; /* Arredonda as bordas das perguntas */
+    padding: 15px; /* Adiciona preenchimento ao redor do conteúdo das perguntas */
+    display: none; /* Inicialmente, as perguntas são invisíveis (serão mostradas dinamicamente) */
+}
+
+/* Estilo para os parágrafos dentro das perguntas */
+.pergunta p {
+    border: 1px solid #ccc; /* Define uma borda cinza clara ao redor do parágrafo */
+    background: #eee; /* Define o fundo do parágrafo como um cinza claro */
+    border-radius: 10px; /* Arredonda as bordas do parágrafo */
+    padding: 10px; /* Adiciona preenchimento ao redor do conteúdo do parágrafo */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+}
+
+/* Estilo para os botões dentro das perguntas */
+.pergunta button {
+    text-align: center; /* Centraliza o texto dentro do botão */
+    padding: 10px; /* Adiciona preenchimento ao redor do botão */
+    background: #013b69; /* Define o fundo do botão como um azul escuro */
+    border: 1px solid #fff; /* Define uma borda branca ao redor do botão */
+    border-radius: 10px; /* Arredonda as bordas do botão */
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Estilo para as listas dentro das perguntas (onde as alternativas são listadas) */
+.pergunta ul {
+    list-style: none; /* Remove o estilo padrão de lista (como os marcadores de lista) */
+}
+
+/* Estilo para os números ao lado das alternativas */
+.pergunta ul li span {
+    border-radius: 50%; /* Torna o número redondo */
+    background: #999; /* Define o fundo do número como cinza */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 3px 8px; /* Adiciona preenchimento ao redor do número */
+}
+
+/* Estilo para os rótulos (labels) das alternativas */
+.pergunta ul li label {
+    display: block; /* Exibe os labels como blocos (um abaixo do outro) */
+    margin: 5px 0; /* Adiciona uma margem de 5px acima e abaixo do label */
+    border: 1px solid #000; /* Adiciona uma borda preta ao redor do label */
+    cursor: pointer; /* Altera o cursor para indicar que o label é clicável */
+    border-radius: 30px; /* Arredonda as bordas do label */
+    padding: 5px; /* Adiciona preenchimento ao redor do texto do label */
+}
+
+/* Estilo para os inputs (caixas de seleção) das alternativas, que ficam invisíveis */
+.pergunta ul li input {
+    width: 1px; /* Define a largura do input como 1px (praticamente invisível) */
+    height: 1px; /* Define a altura do input como 1px (praticamente invisível) */
+}
