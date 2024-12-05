@@ -1,6 +1,11 @@
 # Material-Fatec-Linguagens
 Todos os trabalhos realizados em nosso 2º Semestre em Gestão da Tecnologia da Informação na matéria Linguagens de Programação, orientada pelo professor Tiago A SIlva
 
+## Linguagens Utilizadas
+- HTML
+- CSS
+- Javascript
+  
 # [Aula 1 - Tabela](https://github.com/caioba7777/Material-Fatec-Linguagens/tree/main/01-Tabela)
 ![TABELA](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/1.jpeg?raw=true)
 
