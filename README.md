@@ -24,7 +24,7 @@ Todos os trabalhos realizados em nosso 2º Semestre em Gestão da Tecnologia da 
 # [Aulas 3, 4 e 5 - Loja](https://github.com/caioba7777/Material-Fatec-Linguagens/tree/main/03-Form_Clientes)
 ![3](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/3.jpeg?raw=true)
 ![4](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/4.jpeg?raw=true)
-!/[5](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/2.jpeg?raw=true)
+![5](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/5.jpeg?raw=true)
 
 ## Funcionalidades
 - Implementação de fomulários
@@ -33,7 +33,7 @@ Todos os trabalhos realizados em nosso 2º Semestre em Gestão da Tecnologia da 
 
 
 # [Aula 6 - Formulário com Javascript](https://github.com/caioba7777/Material-Fatec-Linguagens/tree/main/06-Cadastro_Javascript)
-!/[SIMPSONS](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/2.jpeg?raw=true)
+![SIMPSONS](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/6.gif?raw=true)
 
 ## Funcionalidades
 - **Uso de javascript**:
@@ -41,7 +41,7 @@ Todos os trabalhos realizados em nosso 2º Semestre em Gestão da Tecnologia da 
   - Uso de variáveis
  
 # [Aula 7 - Show do Milhão](https://github.com/caioba7777/Material-Fatec-Linguagens/tree/main/07-Show_do_Milhao)
-!/[SHOW DO MILHAO](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/2.jpeg?raw=true)
+![SHOW DO MILHAO](https://github.com/caioba7777/Material-Fatec-Linguagens/blob/main/imagens/7.gif?raw=true)
 
 ## Funcionalidades
 - Estilização na identidade do programa
